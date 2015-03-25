@@ -612,7 +612,7 @@ function text_field_formatter_view(entity_type, entity, field, instance,
           if (typeof item.safe_value !== 'undefined') {
             value = item.safe_value;
           }
-          element[delta] = { markup: value };
+          element[delta] = { markup: value+'<br />' };
       });
     }
     return element;
